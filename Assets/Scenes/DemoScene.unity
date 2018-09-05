@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.29803413, g: 0.6362759, b: 0.9975837, a: 1}
+  m_IndirectSpecularColor: {r: 0.29803425, g: 0.63627553, b: 0.9975837, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -801,6 +801,10 @@ Prefab:
       propertyPath: currentCamera
       value: 
       objectReference: {fileID: 176317622}
+    - target: {fileID: 11400000, guid: 1ca5316dd08051f42b31052d31beefed, type: 2}
+      propertyPath: birdScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca5316dd08051f42b31052d31beefed, type: 2}
   m_IsPrefabAsset: 0
@@ -4798,10 +4802,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1165400353}
-
-  m_LocalRotation: {x: 0.2749251, y: 0.38292038, z: 0.12049411, w: -0.8736529}
-  m_LocalPosition: {x: 330.84183, y: -20.247288, z: 74.04066}
-
+  m_LocalRotation: {x: -0.20852093, y: 0.14579181, z: 0.0314554, w: 0.96657866}
+  m_LocalPosition: {x: 293.46, y: -93.92621, z: 43.414368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5416,10 +5418,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1611328046}
-
-  m_LocalRotation: {x: -0.083817154, y: 0.9124937, z: 0.32275644, w: 0.23697722}
-  m_LocalPosition: {x: 378.73648, y: -40.080814, z: 174.06711}
-
+  m_LocalRotation: {x: -0.17511298, y: -0.3234374, z: 0.061034743, w: -0.9279}
+  m_LocalPosition: {x: 313.31784, y: -17.761372, z: 37.59893}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5920,7 +5920,7 @@ Prefab:
       objectReference: {fileID: 709244348}
     - target: {fileID: 4253806530037276, guid: 8b475bd64d7d5f2418032a0e11bfe556, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4253806530037276, guid: 8b475bd64d7d5f2418032a0e11bfe556, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
