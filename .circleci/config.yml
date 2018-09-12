@@ -1,17 +1,13 @@
-machine:
-  xcode:
-    version: 8.2
-  environment:
-    XCODE_SCHEME: nope
-    XCODE_PROJECT: nope
-    XCODE_WORKSPACE: nope
-dependencies:
-  override:
-    - curl -o Unity.pkg http://download.unity3d.com/download_unity/01f4c123905a/MacEditorInstaller/Unity-5.4.3f1.pkg
-    - curl -o Unity-iOS.pkg http://download.unity3d.com/download_unity/01f4c123905a/MacEditorTargetInstaller/UnitySetup-iOS-Support-for-Editor-5.4.3f1.pkg
-    - sudo installer -dumplog -package Unity.pkg -target /
-    - sudo installer -dumplog -package Unity-iOS.pkg -target /
-    - ./build.sh
-test:
-  override:
-    - echo nope
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
