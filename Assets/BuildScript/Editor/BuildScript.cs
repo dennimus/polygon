@@ -54,13 +54,13 @@ class BuildScript {
 		GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.WebGL,BuildOptions.None);
 	}
 
-/* 	static void PerformAndroidBuild ()
+	static void PerformAndroidBuild ()
 	{
 		//Set the path to the Android SDK on the machine, since Unity cannot retain the state properly
-		AndroidSDKFolder.Path = "$C:\Users\Dennis\AppData\Local\Android\Sdk";
+		AndroidSDKFolder.Path = "${ANDROID_HOME}";
 		string target_dir = APP_NAME + ".apk";
 		GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.Android,BuildOptions.None);
-	} */
+	}
 
 	static void PerformiOSBuild ()
 	{
