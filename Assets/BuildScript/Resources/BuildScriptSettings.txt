@@ -1,2 +1,2 @@
-APP_NAME = unity-jenkins-build-testing-awoo
-TARGET_DIR = D:/unity-jenkins-test/Buildss/
+APP_NAME = polygon
+TARGET_DIR = F:\HZ\unity\polygon
