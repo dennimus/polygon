@@ -6,7 +6,7 @@ class BuildScript {
 	static string[] SCENES = FindEnabledEditorScenes();
 
 	static string APP_NAME = "polygon";
-	static string TARGET_DIR = "target";
+	static string TARGET_DIR = "\builds";
 
 	static void PerformAllBuilds ()
 	{
