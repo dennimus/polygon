@@ -14,7 +14,7 @@ class BuildScript {
 		PerformWindowsBuild ();
 		//PerformWebStreamingBuild ();
 		//PerformWebBuild ();
-		PerformAndroidBuild();
+		//PerformAndroidBuild();
 		//PerformiOSBuild();
 	}
 
