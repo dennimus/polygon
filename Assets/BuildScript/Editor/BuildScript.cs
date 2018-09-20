@@ -6,7 +6,7 @@ class BuildScript {
 	static string[] SCENES = FindEnabledEditorScenes();
 
 	static string APP_NAME = "polygon";
-	static string TARGET_DIR = "/buildsTest";
+	static string TARGET_DIR = "\buildsTessadft";
 
 	static void PerformAllBuilds ()
 	{
@@ -17,7 +17,7 @@ class BuildScript {
 	static void PerformWindowsBuild ()
 	{
 		string target_dir = APP_NAME + ".exe";
-		GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.StandaloneWindows,BuildOptions.None);
+		GenericBuild(SCENES, "test" + "/" + target_dir, BuildTarget.StandaloneWindows,BuildOptions.None);
 	}
 
 	private static string[] FindEnabledEditorScenes() {
@@ -32,9 +32,5 @@ class BuildScript {
 	static void GenericBuild(string[] scenes, string target_dir, BuildTarget build_target, BuildOptions build_options)
 	{
 		EditorUserBuildSettings.SwitchActiveBuildTarget(build_target);
-		//string res = BuildPipeline.BuildPlayer(scenes,target_dir,build_target,build_options);
-		//if (res.Length > 0) {
-		//	throw new Exception("BuildPlayer failure: " + res);
-		//}
 	}
 }
